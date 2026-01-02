@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="atlasstyle.css">
     <link rel="stylesheet" type="text/css" href="landing.css">
+    
 </head>
 <body>
     <header>
@@ -13,41 +14,103 @@
             <a href = "atlas.html">Atlas grzybów</a>
             <a href = "#">Infomacje</a>
             <a href = "ciekawostki.html">Ciekawostki</a>
-            <a href = "#">Kontakt</a>
+            <a href = "kontakt.html">Kontakt</a>
         </nav>
         <h1>Zbierz Grzyby</h1>
     </header>
     <div id="album">
         <div id="p1" class="photo">
             <img src="./img/borowik.jpg">
-            <h2>Borowik szlachetny </h2>
+            <button class="toggle-button">Zbierz</button>
+
+            <div class="tekst">
+                <h2>Borowik szlachetny </h2>
+
+
+            </div>
         </div>
         <div id="p2" class="photo">
             <img src="./img/koźlarz.jpg">
-            <h2>Koźlarz babka </h2>
+            <button class="toggle-button">Zbierz</button>
+
+            <div class="tekst">
+                <h2>Koźlarz babka </h2>
+
+            </div>
         </div>
         <div id="p3" class="photo">
             <img src="./img/kania.jpg">
-            <h2>Czubajka kania </h2>
+            <button class="toggle-button">Zbierz</button>
+
+            <div class="tekst">
+                <h2>Czubajka kania </h2>
+            </div>
+
         </div>
         <div id="p4" class="photo">
             <img src="./img/muchomor.jpg">
-            <h2>Muchomor sromotnikowy </h2>
+            <button class="toggle-button">Zbierz</button>
+
+            <div class="tekst">
+                <h2>Muchomor sromotnikowy </h2>
+
+            </div>
         </div>
+
+        <!-- borowik ceglastopory -->
         <div id="p5" class="photo">
             <img src="./img/sztatański.jpeg">
-            <h2>Borowik szatański </h2>
+            <button class="toggle-button">Zbierz</button>
+
+            <div class="tekst">
+               <h2>Borowik szatański </h2>
+            </div>
+            
         </div>
+
         <div id="p6" class="photo">
             <img src="./img/krowiak.jpeg">
-            <h2>Krowiak powinięty </h2>
+            <button class="toggle-button">Zbierz</button>
+
+            <div class="tekst">
+                <h2>Krowiak powinięty </h2>
+            </div>
         </div>
+        <!-- mleczaj rydz -->
+    
+
     </div>
+
+    <script>       
+        const buttons = document.querySelectorAll('.toggle-button'); 
+
+        buttons.forEach((el) => {        
+                el.addEventListener('click', (e) => {   
+                            document.querySelectorAll('.tekst').forEach((tekst) => { 
+                                tekst.classList.remove('active')
+                            });   
+                            const elNext = el.nextElementSibling;
+                            elNext.classList.toggle('active')
+                            
+                            
+                            if( elNext.classList.contains('active') ){
+                                el.textContent = "Zebrałeś:";  
+                            } else {
+                                el.textContent = "Zbierz";
+                            }   
+                        })           
+                    });         
+    </script>
+
     <footer>
    Copyright &copy 2026 GrzyBaza
     </footer>
 </body>
 </html>
+
+
+        
+
 
 
 

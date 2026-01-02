@@ -5,15 +5,63 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 80px;
+    gap: 40px;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+#album div {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    background-color:saddlebrown;
+    color: #F7F7F3;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.tekst {
+    display: none !important;
+}
+
+.active {
+    display: block !important;
+}
+
+.photo {
+    background-color: hsl(33, 23%, 83%, 0.8);
+    color: #3b3124;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.85;
+    box-shadow: 2px 2px 4px #3b3124;
+    transition: 0.2s;
+}
+
+.photo:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 20px brown;
+    transform: scale(1.05);
 }
 
 .photo img {
     height: 170px;
     width: 250px;
     object-fit: cover;
+    border-radius: 10px;
+
 }
 
 @media only screen and (max-width: 700px) {
