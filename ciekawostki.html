@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="ciekawostkistyle.css">
     <link rel="stylesheet" type="text/css" href="landing.css">
     <link rel="shortcut icon" href="./img/grzyb.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -48,12 +49,34 @@
 
         <section>
             <fieldset id="tab"> 
-                <b>PONIŻEJ MIEJSCE NA WASZE CIEKAWOSTKI</b><br>
-                <textarea name="message" rows="10" cols="30"></textarea>
+                
+                <h2>PONIŻEJ MIEJSCE NA TWOJĄ CIEKAWOSTKĘ</h2>
+
+                <form>
+                    <p>
+                        <textarea id="wpisano" name="message" rows="10" cols="30" placeholder="Napisz własną ciekawostkę"></textarea>
+                        <input type="submit" name="button" id="button" value="Dodaj" >
+                    </p>
+                </form>
+
+                <ul id="dodane"></ul>
+
+                </div>
             </fieldset>
 
             <div id="c1">
-                x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x
+                <b><h2>CIEKAWOSTKA 1</h2></b>
+                <div class="tresc">
+                    <p>
+                    <b>GRZYBOWI GIGANCI</b><br><br>
+                    W meksykańskim lesie w Tapachula w 2007 roku znaleziono owocnika, który ważył aż 20 kilogramów i mierzył ponad 70 cm.
+                    </p>
+                    <img src="./img/xxl.jpg">
+                </div>
+                <div class="zrodlo">
+                <p><a href="https://kobieta.interia.pl/zycie-i-styl/news-grzybowe-rekordy-z-polski-i-swiata-okazy-giganty-robia-wraze,nId,6240826">Źródło: click</a> </p>
+                </div>
+            </div>
             </div>
 
             <div id="c2" class="ciekawostka">
@@ -66,11 +89,26 @@
                     <img src="./img/swiecacy.jpg">
                 </div>
                 <div class="zrodlo">
-                <p>Źródło: https://www.twinkl.pl/blog/polskie-grzyby </p>
+                    <a href="https://www.twinkl.pl/blog/polskie-grzyby">Źródło: click</a> 
                 </div>
             </div>
         </section>
 
+
+        <script>
+           $(document).ready(function() {
+            
+            $('#button').on('click', function(e) { 
+                e.preventDefault();
+                let tekst= $('#wpisano').val();
+                $('#dodane').append( '<li><b>Treść twojej ciekawostki:</b><br>' + tekst + '</li>');
+                $('#wpisano').val("")
+            }); //koniec on(click)
+
+        }); //koniec ready*/
+
+
+        </script>
 
     <footer>
    Copyright &copy 2026 GrzyBaza

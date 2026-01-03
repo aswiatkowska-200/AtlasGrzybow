@@ -99,10 +99,10 @@ section img {
 }
         
 section div{
-    margin: 20px auto;
+    margin: 50px auto;
     background-color: hsl(60, 20%, 96%, 0.9);
     border-radius: 10px;
-    width: 90%; 
+    width: 82%; 
     text-align: center;
     outline: #DDD4C9 solid 10px;
     box-shadow: 10px 10px 20px #3b3124;
@@ -114,7 +114,7 @@ section div{
     margin-bottom: 20px;
     background-color: hsl(60, 20%, 96%, 0.9);
     border-radius: 10px;
-    width: 88%; 
+    width: 80%; 
     text-align: center;
     outline: #DDD4C9 solid 10px;
     box-shadow: 10px 10px 20px #3b3124;
@@ -124,10 +124,16 @@ textarea {
     width: 60%;
 }
 
+/* #dodane li{
+    colo
+} */
+
+
 .ciekawostka{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .tresc{
@@ -137,19 +143,16 @@ textarea {
     box-shadow: none;
     outline: none;
     width: 100% !important;
-    gap: 40px;
+    gap: 80px;
 }
 
 .tresc p {
     text-align: center;
-    margin: 20px 20px;
+    margin: 0 20px;
     width: 50%;
     font-size: 20px;
 }
 
-.tresc img {
-    margin: 20px;
-}
 
 .zrodlo {
     font-size: 15px;
@@ -157,7 +160,7 @@ textarea {
     box-shadow: none;
     outline: none;
     text-align: left;
-    margin: 0;
+    margin-left: 30px;
     padding: 0;
 }
 
