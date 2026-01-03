@@ -1,0 +1,173 @@
+
+#box {
+    display: flex;
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+#box div {
+    
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+#box div:nth-child(1) {
+    outline: #DDD4C9 solid 10px;
+    background-color: hsl(60, 20%, 96%, 0.7);
+    margin-right: 40px;
+
+}
+
+#box div:nth-child(2) {
+    /* outline: hsl(97, 6%, 27%) solid 2px;
+    background-color: hsl(99, 12%, 67%); */
+    outline: #3b3124 solid 10px;
+    background-color:hsl(34, 24%, 19%, 0.7);
+
+}
+
+#box div:hover{
+    box-shadow: 10px 10px 35px #DDD4C9;
+    cursor: pointer;
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.wstep h2 {
+    color: #3b3124;
+}
+
+.spis h2 {
+    color: #DDD4C9;
+}
+
+#box p {
+    font-size: 18px;
+    color: #3b3124;
+    font-weight: 550;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+li{
+    border-top: 3px solid #3b3124;
+} 
+
+li a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color:#DDD4C9;
+    font-weight: 550;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #3b3124;
+    font-size:large;
+}
+
+section img {
+    height: 250px;
+    width: 375px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+        
+section div{
+    margin: 20px auto;
+    background-color: hsl(60, 20%, 96%, 0.9);
+    border-radius: 10px;
+    width: 90%; 
+    text-align: center;
+    outline: #DDD4C9 solid 10px;
+    box-shadow: 10px 10px 20px #3b3124;
+}
+
+#tab {
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    background-color: hsl(60, 20%, 96%, 0.9);
+    border-radius: 10px;
+    width: 88%; 
+    text-align: center;
+    outline: #DDD4C9 solid 10px;
+    box-shadow: 10px 10px 20px #3b3124;
+}
+
+textarea {
+    width: 60%;
+}
+
+.ciekawostka{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tresc{
+    display: flex !important;
+    flex-direction: row !important;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    width: 100% !important;
+    gap: 40px;
+}
+
+.tresc p {
+    text-align: center;
+    margin: 20px 20px;
+    width: 50%;
+    font-size: 20px;
+}
+
+.tresc img {
+    margin: 20px;
+}
+
+.zrodlo {
+    font-size: 15px;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    #box {
+        flex-direction: column;
+    }
+    #box div:nth-child(1) {
+        margin-bottom: 40px;
+    }
+} 
