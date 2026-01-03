@@ -8,27 +8,29 @@
     <link rel="shortcut icon" href="./img/grzyb.jpg">
 
     <style>
-        section {
+        #box {
             display: flex;
             width: 90%; 
             margin: 0 auto; 
         }
 
-        #box {
+        #box div {
+            
+            text-align: center;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
             width: 100%;
         }
 
-        #box:nth-child(1) {
+        #box div:nth-child(1) {
             outline: #DDD4C9 solid 10px;
             background-color: hsl(60, 20%, 96%, 0.7);
             margin-right: 40px;
 
         }
 
-        #box:nth-child(2) {
+        #box div:nth-child(2) {
             /* outline: hsl(97, 6%, 27%) solid 2px;
             background-color: hsl(99, 12%, 67%); */
             outline: #3b3124 solid 10px;
@@ -36,11 +38,31 @@
 
         }
 
+        h2 {
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        
+        .wstep h2 {
+            color: #3b3124;
+        }
+
+        .spis h2 {
+            color: #DDD4C9;
+        }
+
+        p {
+            font-size: 15px;
+            color: #3b3124;
+        }
+
+
         @media only screen and (max-width: 700px) {
-            section {
+            #box {
                 flex-direction: column;
             }
-            #box:nth-child(1) {
+            #box div:nth-child(1) {
                 margin-bottom: 40px;
             }
         } 
@@ -61,16 +83,19 @@
         <h1>Ciekawostki</h1>
     </header>
 
-        <section>
-            <div id="box">
-                <h2>xddddddddddd</h2>
+        <div id="box">
+            <div class="wstep">
+                <h2>NA WSTĘPIE</h2>
+                <p>Tutaj poznacie najciekawsze fakty o grzybach.</p>
+                <p>Serdecznie zachęcamy was do dzielenia się własnymi ciekawostkami w sekcji OD WAS.</p>
+                <p>Czekamy na wasze wpisy!</p>
             </div>
 
-            <div id="box">
-                <h2>xddddddddddd</h2>
+            <div class="spis">
+                <h2>SPIS TREŚCI</h2>
             </div>
 
-        </section>
+        </div>
 
 
     <footer>
