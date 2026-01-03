@@ -41,6 +41,7 @@ button {
 
 .photo {
     background-color: hsl(33, 23%, 83%, 0.8);
+    outline: #DDD4C9 solid 5px;
     color: #3b3124;
     padding: 30px;
     border-radius: 10px;

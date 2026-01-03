@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="ciekawostkistyle.css">
     <link rel="stylesheet" type="text/css" href="landing.css">
+    <link rel="shortcut icon" href="./img/grzyb.jpg">
+
+    <style>
+        section {
+            display: flex;
+            width: 90%; 
+            margin: 0 auto; 
+        }
+
+        #box {
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+        #box:nth-child(1) {
+            outline: #DDD4C9 solid 10px;
+            background-color: hsl(60, 20%, 96%, 0.7);
+            margin-right: 40px;
+
+        }
+
+        #box:nth-child(2) {
+            /* outline: hsl(97, 6%, 27%) solid 2px;
+            background-color: hsl(99, 12%, 67%); */
+            outline: #3b3124 solid 10px;
+            background-color:hsl(34, 24%, 19%, 0.7);
+
+        }
+
+        @media only screen and (max-width: 700px) {
+            section {
+                flex-direction: column;
+            }
+            #box:nth-child(1) {
+                margin-bottom: 40px;
+            }
+        } 
+
+
+    </style>
+
 </head>
 <body>
     <header>
@@ -17,6 +60,17 @@
         </nav>
         <h1>Ciekawostki</h1>
     </header>
+
+        <section>
+            <div id="box">
+                <h2>xddddddddddd</h2>
+            </div>
+
+            <div id="box">
+                <h2>xddddddddddd</h2>
+            </div>
+
+        </section>
 
 
     <footer>
