@@ -49,11 +49,11 @@ nav a {
     text-decoration: none;
     text-align: center;
     color: #F7F7F3;
-    cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
     border-left: 1px solid #F7F7F3;
     padding-left: 30px;
+    cursor: pointer;
 
 }
 

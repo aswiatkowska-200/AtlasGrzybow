@@ -38,6 +38,11 @@
 
         }
 
+        #box div:hover{
+            box-shadow: 10px 10px 35px #DDD4C9;
+            cursor: pointer;
+        }
+
         h2 {
             letter-spacing: 2px;
             font-size: 25px;
@@ -52,7 +57,7 @@
             color: #DDD4C9;
         }
 
-        p {
+        #box p {
             font-size: 18px;
             color: #3b3124;
             font-weight: 550;
@@ -60,25 +65,65 @@
 
         ul {
             list-style: none;
-            margin-right: 20px;
-            font-size: 18px;
-            font-weight: 550;
+            padding: 0;
+            margin: 0;
         }
 
 
         li{
-            height: 30px;
-            margin-bottom: 20px;
-            font-size: 20px;
-
+            border-top: 3px solid #3b3124;
         } 
 
+        li a {
+            display: block;
+            padding: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color:#DDD4C9;
+            font-weight: 550;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+
+        
         section {
             display: flex;
-            width: 100%; 
-            margin: 0 auto;
-            margin-top: 50px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: #3b3124;
+            font-size:large;
+        }
+                
+        section div{
+            margin: 20px auto;
             background-color: hsl(60, 20%, 96%, 0.9);
+            border-radius: 10px;
+            width: 90%; 
+            text-align: center;
+            outline: #DDD4C9 solid 10px;
+            box-shadow: 10px 10px 20px #3b3124;
+        }
+
+        #tab {
+            margin: 0 auto;
+            margin-top: 150px;
+            margin-bottom: 20px;
+            background-color: hsl(60, 20%, 96%, 0.9);
+            border-radius: 10px;
+            width: 90%; 
+            text-align: center;
+            outline: #DDD4C9 solid 10px;
+            box-shadow: 10px 10px 20px #3b3124;
+        }
+
+        textarea {
+            width: 80%;
         }
 
 
@@ -120,13 +165,13 @@
                 <h2>SPIS TREŚCI</h2>
                 <ul>
                     <li>
-                        okokok
+                        <a href="#tab">OD WAS</a>
                     </li>
                     <li>
-                        okokok
+                        <a href="#c1">CIEKAWOSTKA #1</a>
                     </li>
                     <li>
-                        okokok
+                        <a href="#c2">CIEKAWOSTKA #2</a>
                     </li>
 
                 </ul>
@@ -135,13 +180,19 @@
         </div>
 
         <section>
-           <p>x <br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            x
+            <fieldset id="tab"> 
+                <b>PONIŻEJ MIEJSCE NA WASZE CIEKAWOSTKI</b><br>
+                <textarea name="message" rows="10" cols="30"></textarea>
+            </fieldset>
 
-           </p>
+            <div id="c1">
+                x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x
+            </div>
 
-
+            <div id="c2">
+                x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x
+                
+            </div>
         </section>
 
 
