@@ -102,7 +102,7 @@ section > fieldset{
 }
 
 textarea {
-    width: 70%;
+    width: 85%;
     margin-bottom: 20px;
     font-size: larger;
 }
@@ -142,8 +142,6 @@ textarea {
     box-shadow: none !important;
     outline: none !important;
     width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
     display: flex !important;
     flex-direction: row;
     margin-top: 30px !important;
@@ -153,7 +151,7 @@ textarea {
     display: flex !important;
     flex-direction: column !important; 
     align-items: center;               
-    gap: 20px;                   
+                    
 }
 
 
@@ -175,6 +173,11 @@ textarea {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 } 
 
+strong {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
 .tresc img.swiecacy:hover{
     filter: brightness(1.5) drop-shadow(0 0 15px lime);
     cursor: pointer;
@@ -183,7 +186,6 @@ textarea {
 
 .zrodlo a {
     color: #3b3124;
-    text-decoration: none;
     font-size: 15px;
     font-weight: 400;
 }
