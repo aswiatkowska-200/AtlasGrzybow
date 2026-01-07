@@ -102,7 +102,7 @@ section > fieldset{
 }
 
 textarea {
-    width: 85%;
+    width: 80%;
     margin-bottom: 20px;
     font-size: larger;
 }
@@ -188,6 +188,12 @@ strong {
     color: #3b3124;
     font-size: 15px;
     font-weight: 400;
+}
+
+.zrodlo .powrot {
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 700px) {
