@@ -7,12 +7,21 @@ section {
         font-size:large;
         text-align: center;
         text-shadow: #F7F7F3;
+        
     }
+h2 {
+    letter-spacing: 3px;
+}
 
 #box {
     background-color: hsl(60, 20%, 96%, 0.9);
     border-radius: 10px;
      outline: #a9b6a2 solid 10px; 
+}
+
+#box:hover {
+    box-shadow: 10px 10px 15px #F7F7F3;
+    transform: scale(1.05);
 }
 
 iframe {

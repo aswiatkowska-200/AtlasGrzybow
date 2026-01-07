@@ -55,26 +55,39 @@
                 <form>
                     <p>
                         <textarea id="wpisano" name="message" rows="10" cols="30" placeholder="Napisz własną ciekawostkę"></textarea>
+                        <br>
                         <input type="submit" name="button" id="button" value="Dodaj" >
                     </p>
                 </form>
 
-                <ul id="dodane"></ul>
+                <ul id="dodane">
+                    <li>
+                        <b>WPIS OD FANA:</b><br><br>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hzf6fSq2T7g?si=QT9yGnB5YY7QPjjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <b>WPIS OD FANA:</b><br><br>
+                        <img src="./img/magda.jpg" style="max-height: 500px !important; width: auto; max-width: 100% !important; object-fit: contain;">
+                    </li>
 
-                </div>
+                </ul>
+
             </fieldset>
 
             <div id="c1">
                 <b><h2>CIEKAWOSTKA 1</h2></b>
                 <div class="tresc">
                     <p>
-                    <b>GRZYBOWI GIGANCI</b><br><br>
+                    <strong>GRZYBOWI GIGANCI</strong><br><br>
                     W meksykańskim lesie w Tapachula w 2007 roku znaleziono owocnika, który ważył aż 20 kilogramów i mierzył ponad 70 cm.
                     </p>
                     <img src="./img/xxl.jpg">
                 </div>
                 <div class="zrodlo">
-                <p><a href="https://kobieta.interia.pl/zycie-i-styl/news-grzybowe-rekordy-z-polski-i-swiata-okazy-giganty-robia-wraze,nId,6240826">Źródło: click</a> </p>
+                    <a href="https://kobieta.interia.pl/zycie-i-styl/news-grzybowe-rekordy-z-polski-i-swiata-okazy-giganty-robia-wraze,nId,6240826">Źródło: click</a> 
                 </div>
             </div>
             </div>
@@ -83,7 +96,7 @@
                 <b><h2>CIEKAWOSTKA 2</h2></b>
                 <div class="tresc">
                     <p>
-                    <b>ŚWIECĄCE GRZYBY</b><br><br>
+                    <strong>ŚWIECĄCE GRZYBY</strong><br><br>
                     W Polsce można spotkać grzyby, które emitują światło! Przykładem jest Omphalotus olearius, którego owocniki mogą świecić w ciemności dzięki zjawisku bioluminescencji. 
                     </p>
                     <img src="./img/swiecacy.jpg">
@@ -101,7 +114,7 @@
             $('#button').on('click', function(e) { 
                 e.preventDefault();
                 let tekst= $('#wpisano').val();
-                $('#dodane').append( '<li><b>Ciekawostka od fana:</b><br>' + tekst + '</li>');
+                $('#dodane').append( '<li><strong>WPIS OD FANA:</strong><br><br>' + tekst + '</li>');
                 $('#wpisano').val("")
             }); //koniec on(click)
 
