@@ -78,9 +78,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
-
 section {
     display: flex;
     flex-direction: column;
@@ -118,15 +115,49 @@ section div{
     text-align: center;
     outline: #DDD4C9 solid 10px;
     box-shadow: 10px 10px 20px #3b3124;
+
 }
 
 textarea {
-    width: 60%;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #3b3124;
+    font-family: inherit;
 }
 
-/* #dodane li{
-    colo
-} */
+#button {
+    background-color: #3b3124;
+    color: #DDD4C9;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #a9b6a2;
+    transform: scale(1.05);
+}
+
+#dodane {
+    margin-top: 30px;
+    width: 100%;
+}
+
+#dodane li {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #3b3124; 
+    text-align: left;
+    color: #3b3124;
+    font-size: 15px;
+    list-style: none;
+    width: 80%;
+    box-shadow: 2px 2px 10px hsl(34, 24%, 19%, 0.5);
+}
 
 
 .ciekawostka{
@@ -173,4 +204,5 @@ textarea {
     #box div:nth-child(1) {
         margin-bottom: 40px;
     }
+    
 } 

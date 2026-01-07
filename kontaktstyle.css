@@ -1,0 +1,21 @@
+section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #3b3124;
+        font-size:large;
+        text-align: center;
+        text-shadow: #F7F7F3;
+    }
+
+#box {
+    background-color: hsl(60, 20%, 96%, 0.9);
+    border-radius: 10px;
+     outline: #a9b6a2 solid 10px; 
+}
+
+iframe {
+    border-radius: 10px;   
+    outline: #F7F7F3 solid 10px;  
+}
