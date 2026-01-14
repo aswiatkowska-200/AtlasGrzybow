@@ -23,8 +23,32 @@ h2 {
     box-shadow: 10px 10px 15px #F7F7F3;
     transform: scale(1.05);
 }
-
 iframe {
     border-radius: 10px;   
     outline: #F7F7F3 solid 10px;  
+}
+#box {
+    width: 80%;          
+    margin: 40px auto;  
+    padding: 30px;
+    display: block;       
+}
+
+.mapa iframe {
+    width: 600px;        
+    height: 450px;
+
+}
+@media screen and (max-width: 768px) {
+    #box {
+        width: 80%;      
+        padding: 15px;
+    }
+    .mapa iframe {
+        width: 100% !important; 
+        height: 300px;        
+    }
+    nav {
+        flex-direction: column;
+    }
 }

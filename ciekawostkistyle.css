@@ -26,7 +26,6 @@
     background-color: hsl(99, 12%, 67%); */
     outline: #3b3124 solid 10px;
     background-color:hsl(34, 24%, 19%, 0.7);
-
 }
 
 #box div:hover{
@@ -73,7 +72,9 @@ h2 {
     color:#DDD4C9;
     font-weight: 550;
 }
-
+#box li a:hover {
+    color: #F7F7F3;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -195,7 +196,9 @@ strong {
     font-weight: 800;
     letter-spacing: 2px;
 }
-
+.zrodlo .powrot:hover {
+    color: rgb(130, 105, 73) ;
+}
 .film {
     position: relative;
     padding-bottom: 50%;

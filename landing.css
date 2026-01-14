@@ -26,7 +26,7 @@ h1{
 
 h1:hover{
     transform: scale(1.05);
-    cursor: pointer;
+    cursor:default;
 }
 
 nav{
@@ -92,8 +92,28 @@ nav a:nth-child(1) {
     }
 
 } 
-
-
+.stopka {
+  box-sizing: border-box;    
+  /* background-color: #6b7c5f; Przykładowy zielony kolor z Twojej grafiki */
+  display: flex;             
+  justify-content: space-between; /*rozsuwa tekst na lewo a ikony na prawo */
+  align-items: center;      
+  padding: 30px;       
+  color: #3b3124;            
+  height: 50px;             
+}
+.ikony a {
+  margin-left: 15px;         /*odstępy między ikonkami*/
+  text-decoration: none;
+}
+.ikony img {
+  height: 30px;            
+  width: auto;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
 footer{
     background-color: hsl(60, 20%, 96%, 0.5);
     width: 100%;
@@ -101,5 +121,5 @@ footer{
     padding-top: 25px;
     padding-left: 20px;
     margin-top: 50px;
-    color: #3b3124;
+    /* color: #3b3124; */
 }
