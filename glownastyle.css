@@ -1,0 +1,82 @@
+#box {
+    background-color: hsl(60, 20%, 96%, 0.7);
+    outline: #DDD4C9 solid 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*odstep miedzy wierszami*/
+    margin: 30px;
+    border-radius: 10px;
+}
+.wiersz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.wiersz.reverse {
+    flex-direction: row-reverse;
+}
+.wiersz .opis {
+    background-color: #f0ebe6;
+}
+.opis:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.opis {
+    border: 2px dashed black; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;      
+    padding: 25px;           
+    background-color: transparent;
+    width: 45%;               
+}
+.zdj {
+    width: 45%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+
+}
+.zdj img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+p {
+    text-align: center;
+    text-align: justify;
+    font-size: 17px;
+}
+li {
+    font-size: 14px;
+}
+@media screen and (max-width: 700px) {
+    .wiersz {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+    }
+    .opis {
+        width: 100%;           
+        padding: 10px;       
+    }
+    .zdj {
+        width: 100%;         
+        display: flex;
+        justify-content: center;
+    }
+    .zdj img {
+        width: 100%;          
+        height: 250px;       
+        object-fit: cover;    
+        object-position: center; /
+    }
+    .wiersz.reverse {
+        flex-direction: column; 
+    }
+}

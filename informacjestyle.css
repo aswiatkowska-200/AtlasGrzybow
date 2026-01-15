@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+}
+#spis {
+    outline: #3b3124 solid 10px;
+    background-color:hsl(34, 24%, 19%, 0.7);
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 1px;
+}
+#spis ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#spis li{
+    border-top: 3px solid #3b3124;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+#spis li a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color:#DDD4C9;
+    font-weight: 550;
+    text-align: center;
+}
+#spis h2 {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 800;
+    color:#DDD4C9;
+    text-align: center;
+}
+#spis li a:hover {
+    color: #F7F7F3;
+}
+#box {
+    background-color: hsl(60, 20%, 96%, 0.7);
+    outline: #DDD4C9 solid 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*odstep miedzy wierszami*/
+    margin: 30px;
+    border-radius: 10px;
+}
+#box h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color:#3b3124;
+}
+#box p {
+    font-size: 18px;
+    color: #3b3124;
+}
+img {
+    height: 400px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    outline: #F7F7F3 solid 3px;
+}
+#zdjecie {
+    display: flex;
+    justify-content: center;
+}
+#powrot a {
+    color: #3b3124;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+#box #jeden #powrot,
+#box #dwa #powrot,
+#box #trzy #powrot,
+#box #cztery #powrot {
+    text-align: center;
+    margin-top: 50px;
+}
+#box #jeden #powrot a:hover,
+#box #dwa #powrot a:hover,
+#box #trzy #powrot a:hover,
+#box #cztery #powrot a:hover {
+    color: rgb(130, 105, 73) ;
+}
+hr {
+    border-top: 3px solid black;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+@media screen and (max-width: 700px) {
+    #zdjecie {
+        width: 100%;         
+        display: flex;
+        justify-content: center;
+    }
+    #zdjecie img {
+        width: 100%;          
+        height: 250px;       
+        object-fit: cover;    
+        object-position: center; /
+    }
+}
