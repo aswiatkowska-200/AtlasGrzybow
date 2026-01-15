@@ -14,6 +14,8 @@
     width: 100%;
 }
 
+
+/* WSTEP I SPIS */
 #box .wstep {
     outline: #DDD4C9 solid 10px;
     background-color: hsl(60, 20%, 96%, 0.7);
@@ -53,6 +55,12 @@ h2 {
     font-weight: 550;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/*OD WAS*/
+
 #box ul {
     list-style: none;
     padding: 0;
@@ -75,32 +83,7 @@ h2 {
 #box li a:hover {
     color: #F7F7F3;
 }
-html{
-    scroll-behavior: smooth;
-}
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-section > div, section > fieldset{
-    margin: 30px auto;
-    background-color: hsl(60, 20%, 96%, 0.9);
-    border-radius: 10px;
-    width: 85%; 
-    padding: 40px;
-    text-align: center;
-    outline: #DDD4C9 solid 10px;
-    box-shadow: 10px 10px 20px #3b3124;
-    color: #3b3124;
-}
-
-section > fieldset{
-    margin-top: 150px;
-}
 
 textarea {
     width: 80%;
@@ -138,6 +121,46 @@ textarea {
     font-weight: 600;
 }
 
+.film {
+    position: relative;
+    padding-bottom: 50%;
+}
+.film iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+/*SEKCJE*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section > div, section > fieldset{
+    margin: 30px auto;
+    background-color: hsl(60, 20%, 96%, 0.9);
+    border-radius: 10px;
+    width: 85%; 
+    padding: 40px;
+    text-align: center;
+    outline: #DDD4C9 solid 10px;
+    box-shadow: 10px 10px 20px #3b3124;
+    color: #3b3124;
+}
+
+section > fieldset{
+    margin-top: 150px;
+}
+
+/*CIEKAWOSTKI*/
+
 .tresc {
     background: none !important;
     box-shadow: none !important;
@@ -151,7 +174,7 @@ textarea {
 #c1 .tresc {
     display: flex !important;
     flex-direction: column !important; 
-    align-items: center;               
+    align-items: center;        
                     
 }
 
@@ -198,17 +221,6 @@ strong {
 }
 .zrodlo .powrot:hover {
     color: rgb(130, 105, 73) ;
-}
-.film {
-    position: relative;
-    padding-bottom: 50%;
-}
-.film iframe {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; 
-    height: 100%;
-    border-radius: 8px;
 }
 
 @media only screen and (max-width: 700px) {
