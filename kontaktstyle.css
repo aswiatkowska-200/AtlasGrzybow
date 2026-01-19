@@ -39,10 +39,10 @@ iframe {
     height: 450px;
 }
 .oferty {
-    color: red;
+    color:darkred;
 }
 .wspolpraca {
-    color: red;
+    color:darkred;
     font-size: 30px;
 }
 @media screen and (max-width: 768px) {
