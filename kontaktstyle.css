@@ -37,7 +37,13 @@ iframe {
 .mapa iframe {
     width: 600px;        
     height: 450px;
-
+}
+.oferty {
+    color: red;
+}
+.wspolpraca {
+    color: red;
+    font-size: 30px;
 }
 @media screen and (max-width: 768px) {
     #box {
